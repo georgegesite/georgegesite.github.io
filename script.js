@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
     validateConfig();
 
     // Set texts from config
-    document.getElementById('valentineTitle').textContent = `${config.valentineName}, my love...`;
+    document.getElementById('valentineTitle').textContent = `My ${config.valentineName}`;
     
     // Set first question texts
     document.getElementById('question1Text').textContent = config.questions.first.text;
@@ -84,12 +84,12 @@ window.addEventListener('DOMContentLoaded', () => {
     setupMusicPlayer();
 });
 
-// Create floating hearts and bears
+// Create floating flowers and moons
 function createFloatingElements() {
     const container = document.querySelector('.floating-elements');
     
-    // Create hearts
-    config.floatingEmojis.hearts.forEach(heart => {
+    // Create flowers
+    config.floatingEmojis.flowers.forEach(heart => {
         const div = document.createElement('div');
         div.className = 'heart';
         div.innerHTML = heart;
@@ -97,8 +97,8 @@ function createFloatingElements() {
         container.appendChild(div);
     });
 
-    // Create bears
-    config.floatingEmojis.bears.forEach(bear => {
+    // Create moons
+    config.floatingEmojis.moons.forEach(bear => {
         const div = document.createElement('div');
         div.className = 'bear';
         div.innerHTML = bear;
