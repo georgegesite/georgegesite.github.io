@@ -118,8 +118,13 @@ function setRandomPosition(element) {
 function showNextQuestion(questionNumber) {
     document.querySelectorAll('.question-section').forEach(q => q.classList.add('hidden'));
     document.getElementById(`question${questionNumber}`).classList.remove('hidden');
-}
 
+    if (questionNumber === 3) {
+        // Reset love meter for the final question
+        document.getElementById('valentineTitle').classList.add('hidden');
+    }
+}
+let growScale = 1;
 // Function to move the "No" button when clicked
 function moveButton(button) {
     const x = Math.random() * (window.innerWidth - button.offsetWidth);
@@ -127,6 +132,10 @@ function moveButton(button) {
     button.style.position = 'fixed';
     button.style.left = x + 'px';
     button.style.top = y + 'px';
+
+    const secretBtn = document.getElementById("secretAnswerBtn");
+    growScale += 0.2;
+    secretBtn.style.transform = `scale(${growScale})`;
 }
 
 // Love meter functionality

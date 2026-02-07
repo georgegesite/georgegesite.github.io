@@ -36,6 +36,15 @@ body {
     overflow: visible !important;
 }
 
+.celebration-image {
+    display: block;
+    margin: 20px auto 0;
+    max-width: 100%;      /* never wider than container */
+    height: auto;         /* keep aspect ratio */
+    border-radius: 16px;  /* optional: soft Valentine vibes */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 .floating-elements {
     position: fixed;
     width: 100%;
@@ -71,6 +80,15 @@ body {
     transition: transform 0.3s, background 0.3s;
 }
 
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.4); }
+}
+
+.cute-btn.grow {
+    animation: pulse 0.6s infinite alternate;
+}
+
 .cute-btn:hover {
     transform: scale(1.1);
     background: var(--button-hover);
@@ -89,7 +107,7 @@ body {
 .secret-answer {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    /* right: 20px; */
     margin-top: 0;
     opacity: 0.2;
     transition: opacity 0.3s;

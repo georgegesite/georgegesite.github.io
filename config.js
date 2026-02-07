@@ -42,16 +42,16 @@ const CONFIG = {
     // Love meter messages
     // They show up depending on how far they slide the meter
     loveMessages: {
-        extreme: "okay thats tooooo muchhh",  // Shows when they go past 5000%
+        extreme: "okay that's tooooo muchhh",  // Shows when they go past 5000%
         high: "more than our dog???",              // Shows when they go past 1000%
         normal: "more than PARIS?"                           // Shows when they go past 100%
     },
 
     // Messages that appear after they say "Yes!"
     celebration: {
-        title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
+        title: "It's a DATE! 🎉",
+        message: "Now here's your ticket. See you soon my Freak!",
+        emojis: "✈️🤗🌷"  // These will bounce around
     },
 
     // Color scheme for the website
