@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // A quiet line about distance rather than a real date, since this
     // is read whenever it's read.
     document.getElementById("letter-date").textContent =
-      "written from far away, thinking of you";
+      "Sept. 20, 2026";
 
     const body = document.getElementById("letter-body");
     body.innerHTML = "";
